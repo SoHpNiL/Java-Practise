@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Design_Patterns.Cloner.Main",
+            "projectName": "Java-Practise_b0276117"
+        },
+        {
+            "type": "java",
+            "name": "TestFile$Main",
+            "request": "launch",
+            "mainClass": "TestFile$Main",
+            "projectName": "Java-Practise_b0276117"
+        },
+        {
+            "type": "java",
+            "name": "CR5",
+            "request": "launch",
+            "mainClass": "CR5",
+            "projectName": "Java-Practise_b0276117"
+        },
+        {
+            "type": "java",
+            "name": "TestFile",
+            "request": "launch",
+            "mainClass": "TestFile",
+            "projectName": "Java-Practise_b0276117"
+        },
+        {
+            "type": "java",
+            "name": "Person",
+            "request": "launch",
+            "mainClass": "Person",
+            "projectName": "Java-Practise_b0276117"
+        },
+        {
+            "type": "java",
+            "name": "CR3",
+            "request": "launch",
+            "mainClass": "CR3",
+            "projectName": "Java-Practise_b0276117"
+        },
+        {
+            "type": "java",
+            "name": "CR2",
+            "request": "launch",
+            "mainClass": "CR2",
+            "projectName": "Java-Practise_b0276117"
+        },
+        {
+            "type": "java",
             "name": "L3",
             "request": "launch",
             "mainClass": "L3",

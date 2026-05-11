@@ -1,23 +1,35 @@
+import Design_Patterns.SoupNoodle;
+
 public class TestFile {
-	public static void main(String[] args) {
-		Bottle bottle = new Bottle(1000);
+    public class Main {
+    public static void main(String[] args) {
 
-		System.out.println(bottle.getCurrentLiquidAmount()); // Ensure getCurrentLiquidAmount() returns a value, not void
-		System.out.println(bottle.getCapacity());
+        // Test 1 - basic order
+        SoupNoodle noodle1 = new SoupNoodle.NoodleBuilder(
+            SoupNoodle.NoodleType.WHEAT_RAMEN,
+            SoupNoodle.Size.NORMAL)
+            .build();
+        System.out.println("Test 1: " + noodle1);
 
+        // Test 2 - everything added
+        SoupNoodle noodle2 = new SoupNoodle.NoodleBuilder(
+            SoupNoodle.NoodleType.RICE_VERMICELLI,
+            SoupNoodle.Size.LARGE)
+            .addEggs()
+            .addVeggies()
+            .addShoots()
+            .addNoodles()
+            .build();
+        System.out.println("Test 2: " + noodle2);
 
-        Bottle bottle1 = new Bottle(1000);
-Bottle bottle2 = new Bottle(1000);
-
-bottle1.fill(1000);
-bottle2.fill(1);
-
-System.out.println(bottle1.getCurrentLiquidAmount());
-System.out.println(bottle2.getCurrentLiquidAmount());
-
-bottle2.pourInto(bottle1);
-
-System.out.println(bottle1.getCurrentLiquidAmount());
-System.out.println(bottle2.getCurrentLiquidAmount());
-	}
+        // Test 3 - just egg and extra noodles
+        SoupNoodle noodle3 = new SoupNoodle.NoodleBuilder(
+            SoupNoodle.NoodleType.BUCKWHEAT_SOBA,
+            SoupNoodle.Size.EXTRA_LARGE)
+            .addEggs()
+            .addNoodles()
+            .build();
+        System.out.println("Test 3: " + noodle3);
+    }
+}
 }
